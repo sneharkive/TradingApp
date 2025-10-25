@@ -1,15 +1,18 @@
 {
-  "name": "backend",
+  "name": "trading_server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trading App Backend Server",
   "main": "index.js",
+  "type":"module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "seed": "node scripts/seedStock.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "buffer-from": "^1.1.2",
@@ -28,5 +31,8 @@
     "socket.io": "^4.8.1",
     "swagger-ui-express": "^5.0.1",
     "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
